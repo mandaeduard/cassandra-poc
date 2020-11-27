@@ -1,0 +1,17 @@
+
+spring:
+  data:
+    cassandra:
+      keyspace-name: keyspace
+      local-datacenter: DC1
+      contact-points: contact-points
+      username: username
+      password: password
+      request:
+        consistency: each_quorum
+        serial-consistency: each_quorum
+
+logging:
+  level:
+    org.springframework.data.cassandra: DEBUG
+#    com.datastax.oss: DEBUG
